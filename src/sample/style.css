@@ -1,0 +1,139 @@
+.background {
+    -fx-background-color: #086A87;
+}
+
+.label {
+    -fx-font-size: 11pt;
+    -fx-font-family: "comic sans ms";
+    -fx-text-fill: white;
+    -fx-opacity: 0.6;
+}
+.label-bright {
+    -fx-font-size: 11pt;
+    -fx-font-family: "comic sans ms";
+    -fx-text-fill: white;
+    -fx-opacity: 1;
+}
+
+.label-header {
+    -fx-font-size: 32pt;
+    -fx-font-family: "comic sans ms";
+    -fx-text-fill: transparent;
+    -fx-opacity: 1;
+}
+
+.table-view {
+    -fx-base: #4682B4;
+    -fx-control-inner-background: #87CEFA;
+    -fx-background-color: #000080;
+    -fx-table-cell-border-color: #1E90FF;
+    -fx-table-header-border-color: #000000;
+    -fx-padding: 5;
+    -fx-font-size: 10pt;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #191970;
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-size: 35;
+    -fx-border-width: 0 0 1 0;
+    -fx-background-color: #1E90FF;
+    -fx-border-color: #191970;
+    -fx-border-insets: 0 10 1 0;
+}
+
+.table-view .column-header .label {
+    -fx-font-size: 11pt;
+    -fx-font-family: "arial";
+    -fx-text-fill: #0A0A2A;
+    -fx-alignment: center-left;
+    -fx-opacity: 1;
+}
+
+.table-view:focused .table-row-cell:filled:focused:selected {
+    -fx-background-color: -fx-focus-color;
+}
+
+.split-pane:horizontal > .split-pane-divider {
+    -fx-border-color: transparent #1d1d1d transparent #1d1d1d;
+    -fx-background-color: transparent, derive(#1d1d1d,20%);
+}
+
+.split-pane {
+    -fx-padding: 1 0 0 0;
+}
+
+.menu-bar {
+    -fx-background-color: derive(#086A87,20%);
+}
+
+.context-menu {
+    -fx-background-color: derive(#086A87,20%);
+}
+
+.menu-bar .label {
+    -fx-font-size: 14pt;
+    -fx-font-family: "comic sans ms";
+    -fx-text-fill: white;
+    -fx-opacity: 0.9;
+}
+
+.menu .left-container {
+    -fx-background-color: black;
+}
+
+.text-field {
+    -fx-font-size: 12pt;
+    -fx-font-family: "comic sans ms";
+}
+
+/* 
+ * Metro style Push Button
+ * Author: Pedro Duque Vieira
+ * http://pixelduke.wordpress.com/2012/10/23/jmetro-windows-8-controls-on-java/
+ */
+.button {
+    -fx-padding: 5 22 5 22;   
+    -fx-border-color: #0B0B3B;
+    -fx-border-width: 0;
+    -fx-background-radius: 15;
+    -fx-background-color: #0B0B3B;
+    -fx-font-family: "comic sans ms", Helvetica, Arial, sans-serif;
+    -fx-font-size: 10pt;
+    -fx-text-fill: #EFFBFB;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+.button:hover {
+    -fx-background-color: #0489B1;
+}
+
+.button:pressed, .button:default:hover:pressed {
+  -fx-background-color: #5858FA;
+  -fx-text-fill: #1C1C1C;
+}
+
+.button:focused {
+    -fx-border-color: white, white;
+    -fx-border-width: 1, 1;
+    -fx-border-style: solid, segments(1, 1);
+    -fx-border-radius: 0, 0;
+    -fx-border-insets: 1 1 1 1, 0;
+}
+
+.button:disabled, .button:default:disabled {
+    -fx-opacity: 0.4;
+    -fx-background-color: #1d1d1d;
+    -fx-text-fill: white;
+}
+
+.button:default {
+    -fx-background-color: -fx-focus-color;
+    -fx-text-fill: #ffffff;
+}
+
+.button:default:hover {
+    -fx-background-color: derive(-fx-focus-color,30%);
+}
