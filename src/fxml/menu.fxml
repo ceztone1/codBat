@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="720.0" style="-fx-background-color: #8C99AE;" xmlns="http://javafx.com/javafx/8.0.999-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllerPrincipal">
+    <children>
+        <HBox prefHeight="50.0" prefWidth="720.0" style="-fx-background-color: #3BB9C2;">
+            <children>
+                <Button fx:id="btnLog1" minWidth="100.0" mnemonicParsing="false" style="-fx-background-color: #3E4D6B; -fx-text-fill: white;" text="LOGIC 1">
+                    <HBox.margin>
+                        <Insets right="10.0" />
+                    </HBox.margin>
+                </Button>
+                <Button fx:id="btnLog2" minWidth="100.0" mnemonicParsing="false" style="-fx-background-color: #3E4D6B; -fx-text-fill: white;" text="LOGIC 2">
+                    <HBox.margin>
+                        <Insets right="10.0" />
+                    </HBox.margin>
+                </Button>
+                <Button fx:id="btnMap" minWidth="100.0" mnemonicParsing="false" style="-fx-background-color: #3E4D6B; -fx-text-fill: white;" text="MAP 2">
+                    <HBox.margin>
+                        <Insets right="10.0" />
+                    </HBox.margin>
+                </Button>
+                <Button fx:id="btnWar" minWidth="100.0" mnemonicParsing="false" style="-fx-background-color: #3E4D6B; -fx-text-fill: white;" text="WARMUP 2">
+                    <HBox.margin>
+                        <Insets right="10.0" />
+                    </HBox.margin>
+                </Button>
+            <ComboBox fx:id="cbDificultad" prefWidth="100.0" style="-fx-background-color: #3E4D6B;">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </ComboBox>
+            <ComboBox fx:id="cbSolucion" prefWidth="100.0" style="-fx-background-color: #3E4D6B;">
+
+            </ComboBox>
+            </children>
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </padding>
+        </HBox>
+        <Label layoutX="236.0" layoutY="96.0" text="EJERCICIOS">
+            <font>
+                <Font name="Candara Light" size="26.0" />
+            </font>
+        </Label>
+        <Button fx:id="btnShow" layoutX="528.0" layoutY="224.0" mnemonicParsing="false" style="-fx-background-color: #3E4D6B; -fx-text-fill: white;" text="Mostrar" />
+      <TableView fx:id="tblProblema" layoutX="100.0" layoutY="139.0" prefHeight="200.0" prefWidth="400.0" style="-fx-background-color: rgba(63, 191, 191, 0.7); -fx-border-color: blue;">
+        <columns>
+          <TableColumn fx:id="tblColNombre" minWidth="0.0" prefWidth="400.0" text="Nombre">
+              <cellValueFactory>
+                  <PropertyValueFactory property="nombre" />
+              </cellValueFactory>
+          </TableColumn>
+        </columns>
+      </TableView>
+    </children>
+</AnchorPane>
