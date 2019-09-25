@@ -123,7 +123,7 @@ public class controllerPrincipal implements Initializable {
             try {
                 parent = loader.load();
               //  parent.getStylesheets().add("sample/style.css");
-                Scene scene = new Scene(parent, 1500, 500);
+                Scene scene = new Scene(parent);
                 stage.setScene(scene);
                 stage.show();
             } catch (IOException e) {

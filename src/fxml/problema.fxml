@@ -9,30 +9,25 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="515.0" prefWidth="1500.0" style="-fx-background-color: #8C99AE;" xmlns="http://javafx.com/javafx/8.0.999-ea" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1800.0" style="-fx-background-color: #8C99AE;" xmlns="http://javafx.com/javafx/8.0.999-ea" xmlns:fx="http://javafx.com/fxml/1">
     <children>
-        <VBox layoutX="14.0" layoutY="25.0" prefHeight="466.0" prefWidth="427.0" style="-fx-border-color: #3E4D6B; -fx-border-width: 2;">
+        <VBox layoutX="14.0" layoutY="25.0" prefHeight="750.0" prefWidth="427.0" style="-fx-border-color: #3E4D6B; -fx-border-width: 2;">
             <children>
                 <Label alignment="CENTER" prefHeight="50.0" prefWidth="428.0" style="-fx-background-color: #3BB9C2; -fx-font: 16px Abadi;" text="Predeterminated Solution" />
-                <Label fx:id="lblCodSol" alignment="CENTER" contentDisplay="CENTER" prefHeight="340.0" prefWidth="423.0" text="Codigo">
-               <VBox.margin>
-                  <Insets top="50.0" />
-               </VBox.margin></Label>
+                <Label fx:id="lblCodSol" alignment="CENTER" contentDisplay="CENTER" prefHeight="720.0" prefWidth="423.0" text="Codigo"/>
+
             </children>
         </VBox>
-        <VBox layoutX="448.0" layoutY="25.0" prefHeight="466.0" prefWidth="427.0" style="-fx-border-color: #3E4D6B; -fx-border-width: 2;">
+        <VBox layoutX="448.0" layoutY="25.0" prefHeight="750.0" prefWidth="427.0" style="-fx-border-color: #3E4D6B; -fx-border-width: 2;">
             <children>
                 <Label alignment="CENTER" prefHeight="50.0" prefWidth="433.0" style="-fx-background-color: #3BB9C2; -fx-font: 16px Abadi;" text="Own Solution" />
-                <Label fx:id="lblCodPropio" alignment="CENTER" prefHeight="338.0" prefWidth="423.0" text="Codigo">
-               <VBox.margin>
-                  <Insets top="50.0" />
-               </VBox.margin></Label>
+                <Label fx:id="lblCodPropio" alignment="CENTER" prefHeight="720.0" prefWidth="423.0" text="Codigo"/>
             </children>
             <opaqueInsets>
                 <Insets />
             </opaqueInsets>
         </VBox>
-        <VBox layoutX="885.0" layoutY="25.0" prefHeight="466.0" prefWidth="453.0" style="-fx-border-color: #3E4D6B; -fx-border-width: 2;">
+        <VBox layoutX="885.0" layoutY="25.0" prefHeight="750.0" prefWidth="453.0" style="-fx-border-color: #3E4D6B; -fx-border-width: 2;">
             <children>
                 <Label alignment="CENTER" prefHeight="50.0" prefWidth="451.0" style="-fx-background-color: #3BB9C2; -fx-font: 16px Abadi;" text="Output" />
             <TableView fx:id="tblResult" prefHeight="200.0" prefWidth="180.0">
@@ -62,7 +57,7 @@
                 <Insets />
             </opaqueInsets>
         </VBox>
-        <VBox alignment="CENTER" layoutX="1371.0" layoutY="158.0" prefHeight="200.0" prefWidth="100.0">
+        <VBox alignment="CENTER" layoutX="1371.0" layoutY="158.0" prefHeight="750.0" prefWidth="100.0">
             <children>
                 <Button mnemonicParsing="false" prefHeight="20.0" prefWidth="100.0" style="-fx-background-color: #3E4D6B; -fx-border-radius: 30; -fx-text-fill: white;" text="Tests" visible="false">
                     <VBox.margin>

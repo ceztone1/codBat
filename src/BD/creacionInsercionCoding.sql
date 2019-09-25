@@ -68,20 +68,16 @@ values (1,2,   "public int roundSum(int a, int b, int c) {\n
           sum+=(a/10+1)*10;\n
         else\n
            sum+=(a/10)*10;\n
-        \n
         if(b%10 >4)\n
            sum+=(b/10+1)*10;\n
         else\n
            sum+=(b/10)*10;\n
-        \n
         if(c%10 >4)\n
            sum+=(c/10+1)*10;\n
         else\n
            sum+=(c/10)*10;\n
-        \n
          return sum; \n
-        }\n
-        \n"
+        }\n"
 );
 insert into solucion
 values (1,3, "public String alarmClock(int day, boolean vacation) \n
