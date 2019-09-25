@@ -33,6 +33,10 @@ public class controllerPrincipal implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+
+
+
+        tblProblema.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);
         actions();
          mostrartablaProblemas();
          llenarCombo();
@@ -111,12 +115,14 @@ public class controllerPrincipal implements Initializable {
             controllerProblema paciente = new controllerProblema(id);
             stage.setTitle("Problema");
             loader = new FXMLLoader(getClass().getResource("../fxml/problema.fxml"));
+
             loader.setController(paciente);
             stage.setResizable(false);
 
 
             try {
                 parent = loader.load();
+                parent.getStylesheets().add("sample/style.css");
                 Scene scene = new Scene(parent, 1000, 500);
                 stage.setScene(scene);
                 stage.show();
@@ -144,13 +150,13 @@ public class controllerPrincipal implements Initializable {
     void llenarCombo(){
         ObservableList<String> options2 =
                 FXCollections.observableArrayList(
-                        "Dificultad 1",
-                        "Dificultad 2"
+                        "Dificulty 1",
+                        "Dificulty 2"
                 );
         ObservableList<String> options1 =
                 FXCollections.observableArrayList(
-                        "Sin solucion",
-                        "Con solucion"
+                        "Without Solution",
+                        "With Solution"
                 );
         cbDificultad.setItems(options2);
         cbSolucion.setItems(options1);

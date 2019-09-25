@@ -11,9 +11,11 @@ constraint pk1problema primary key (idProblema));
 create table solucion(
 idSolucion int not null,
 idProblema int not null,
-codigo varchar(1000),
+codigo text,
 constraint pk1solucion primary key (idSolucion,idProblema),
 constraint fk1solucion foreign key (idProblema) references problema(idProblema));
+
+
 
 --Insercion de datos--
 insert into problema
@@ -21,6 +23,21 @@ values (1,"ArrayCount","WARMUP",2);
 
 insert into problema
 values (2,"roundSum","LOGIC",2);
+
+insert into problema
+values (3,"alarmClock","LOGIC",1);
+
+insert into problema
+values (4,"shareDigit","LOGIC",1);
+
+insert into problema
+values (5,"answerCell","LOGIC",1);
+
+insert into problema
+values (6," has271","WARMUP",2);
+
+
+
 
 insert into solucion
 values (1,1,   "public int arrayCount9(int[] nums) {\n
@@ -66,5 +83,115 @@ values (1,2,   "public int roundSum(int a, int b, int c) {\n
         }\n
         \n"
 );
+insert into solucion
+values (1,3, "public String alarmClock(int day, boolean vacation) \n
+            {\n
+              String alarm=\"\"; \n
+              if (vacation == true && (day ==0)||(day==6)) \n
+              {\n
+                alarm = \"off\"; \n
+              }\n
+              else \n
+              {\n
+                if (vacation == true && (day != 0)||( day != 6))\n
+                alarm = \"10:00\";\n
+              }\n
+              switch (day)\n
+              {\n
+                case 0:\n
+                  //Cuando es domingo \n
+                  if (vacation == false)\n
+                    alarm = \"10:00\";\n
+                  break; \n
+                case 1:\n
+                  //Cuando es lunes\n
+                  if (vacation == false)\n
+                    alarm = \"7:00\";\n
+                   break;\n
+                case 2: \n
+                  //Cuando es martes \n
+                   if (vacation == false)\n
+                    alarm = \"7:00\";\n
+                  break;\n
+                case 3:\n
+                  //Cuadno es miercoles \n
+                   if (vacation == false)\n
+                    alarm = \"7:00\";\n
+                  break;\n
+                case 4: \n
+                  //Cuando es jueves \n
+                 if (vacation == false)\n
+                    alarm = \"7:00\";\n
+                  break;\n
+                case 5: \n
+                  //Cuando es viernes \n
+                 if (vacation == false)\n
+                    alarm = \"7:00\";\n
+                  break;\n
+                case 6:\n
+                  //Cuando es sabado\n
+                   if (vacation == false)\n
+                    alarm = \"10:00\";\n
+                  break; \n
+              }\n
+              return alarm; \n
+            }");
+
+insert into solucion
+values (1,4, "public boolean shareDigit(int a, int b) \n
+        {\n
+          boolean v = false; \n
+          int decA, decB,uniA,uniB;\n
+          decA = a/10; \n
+          decB = b/10; \n
+          uniA= a%10; \n
+          uniB=b%10; \n
+          \n
+          if (decA==decB || decA == uniB)\n
+            v = true;\n
+          else\n
+          {\n
+           v = false; \n
+          if (uniA == decB || uniA==uniB)\n
+           v = true; \n
+           else \n
+           v= false; \n
+         }\n
+        return v;\n
+        }");
+
+insert into solucion
+values (1,5, "public boolean answerCell(boolean isMorning, boolean isMom, boolean isAsleep) \n
+        {\n
+          boolean ans = false; \n
+          if (isMorning == true)\n
+          {\n
+            ans = false; \n
+            if (isMom==true)\n
+            {\n
+              ans = true; \n
+            }\n
+            else \n
+            {\n
+              ans = false; \n
+            }\n
+          }\n
+          else \n
+          {\n
+            if(isAsleep== false )\n
+            {\n
+              ans = true;\n
+            }\n
+            else \n
+            {\n
+              ans = false; \n
+            }\n
+          }\n
+         return ans;  \n
+        }");
+
+
+
+
 
 

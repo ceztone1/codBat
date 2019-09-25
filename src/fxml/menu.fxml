@@ -11,9 +11,9 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="720.0" style="-fx-background-color: #8C99AE;" xmlns="http://javafx.com/javafx/8.0.999-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllerPrincipal">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="680.0" style="-fx-background-color: #8C99AE;" xmlns="http://javafx.com/javafx/8.0.999-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllerPrincipal">
     <children>
-        <HBox prefHeight="50.0" prefWidth="720.0" style="-fx-background-color: #3BB9C2;">
+        <HBox prefHeight="51.0" prefWidth="679.0" style="-fx-background-color: #3BB9C2;">
             <children>
                 <Button fx:id="btnLog1" minWidth="100.0" mnemonicParsing="false" style="-fx-background-color: #3E4D6B; -fx-text-fill: white;" text="LOGIC 1">
                     <HBox.margin>
@@ -48,15 +48,15 @@
                 <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
             </padding>
         </HBox>
-        <Label layoutX="236.0" layoutY="96.0" text="EJERCICIOS">
+        <Label layoutX="207.0" layoutY="96.0" text="Exercises">
             <font>
                 <Font name="Candara Light" size="26.0" />
             </font>
         </Label>
-        <Button fx:id="btnShow" layoutX="528.0" layoutY="224.0" mnemonicParsing="false" style="-fx-background-color: #3E4D6B; -fx-text-fill: white;" text="Mostrar" />
-      <TableView fx:id="tblProblema" layoutX="100.0" layoutY="139.0" prefHeight="200.0" prefWidth="400.0" style="-fx-background-color: rgba(63, 191, 191, 0.7); -fx-border-color: blue;">
+        <Button fx:id="btnShow" layoutX="564.0" layoutY="224.0" mnemonicParsing="false" style="-fx-background-color: #3E4D6B; -fx-text-fill: white;" text="Show" />
+      <TableView fx:id="tblProblema" layoutX="41.0" layoutY="139.0" prefHeight="200.0" prefWidth="459.0" style="-fx-background-color: rgba(63, 191, 191, 0.7); -fx-border-color: blue;">
         <columns>
-          <TableColumn fx:id="tblColNombre" minWidth="0.0" prefWidth="400.0" text="Nombre">
+          <TableColumn fx:id="tblColNombre" minWidth="0.0" prefWidth="435.0" text="Name">
               <cellValueFactory>
                   <PropertyValueFactory property="nombre" />
               </cellValueFactory>
