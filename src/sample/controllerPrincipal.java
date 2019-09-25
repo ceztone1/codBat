@@ -72,7 +72,7 @@ public class controllerPrincipal implements Initializable {
         });
         cbSolucion.setOnAction(x->{
 
-            if(cbSolucion.getSelectionModel().getSelectedItem().equals("Sin solucion")){
+            if(cbSolucion.getSelectionModel().getSelectedItem().equals("Without Solution")){
                 tblProblema.setItems(dao.fetchSinSolucion(1));
             }else{
                 tblProblema.setItems(dao.fetchSolucion(2));
@@ -80,7 +80,7 @@ public class controllerPrincipal implements Initializable {
         });
         cbDificultad.setOnAction(x->{
 
-            if(cbDificultad.getSelectionModel().getSelectedItem().equals("Dificultad 1")){
+            if(cbDificultad.getSelectionModel().getSelectedItem().equals("Dificulty 1")){
 
                 tblProblema.setItems(dao.fetchDificultad(1));
                 System.out.println("unooooooooooooo");
@@ -112,7 +112,7 @@ public class controllerPrincipal implements Initializable {
         Parent parent;
 
 
-            controllerProblema paciente = new controllerProblema(id);
+            controllerProblema paciente = new controllerProblema(id,stage);
             stage.setTitle("Problema");
             loader = new FXMLLoader(getClass().getResource("../fxml/problema.fxml"));
 
@@ -122,8 +122,8 @@ public class controllerPrincipal implements Initializable {
 
             try {
                 parent = loader.load();
-                parent.getStylesheets().add("sample/style.css");
-                Scene scene = new Scene(parent, 1000, 500);
+              //  parent.getStylesheets().add("sample/style.css");
+                Scene scene = new Scene(parent, 1500, 500);
                 stage.setScene(scene);
                 stage.show();
             } catch (IOException e) {

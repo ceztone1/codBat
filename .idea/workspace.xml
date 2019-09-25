@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Agregación de script">
-      <change afterPath="$PROJECT_DIR$/src/sample/ejercicio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/prueba.java" afterDir="false" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Agregación de tablas con pruebas 2.0">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/coding/fxml/menu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/coding/fxml/menu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/coding/BD/DAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/coding/BD/DAO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/coding/fxml/problema.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/coding/fxml/problema.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/coding/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/coding/sample/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/coding/sample/controllerPrincipal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/coding/sample/controllerPrincipal.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/coding/sample/controllerProblema.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/coding/sample/controllerProblema.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BD/creacionInsercionCoding.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/BD/creacionInsercionCoding.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/fxml/menu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/fxml/menu.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/fxml/problema.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/fxml/problema.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/controllerPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/controllerPrincipal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/controllerProblema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/controllerProblema.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/style.css" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -75,11 +73,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BD/DAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="64">
-              <caret line="73" column="40" lean-forward="true" selection-start-line="73" selection-start-column="40" selection-end-line="73" selection-end-column="40" />
+            <state relative-caret-position="3128">
+              <caret line="193" selection-start-line="193" selection-end-line="193" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/sample/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="239">
+              <caret line="120" column="27" selection-start-line="120" selection-start-column="27" selection-end-line="120" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -87,8 +94,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="83" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="83" />
+            <state relative-caret-position="153">
+              <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -99,8 +106,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/controllerPrincipal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="124" column="64" selection-start-line="124" selection-start-column="64" selection-end-line="124" selection-end-column="64" />
+            <state relative-caret-position="1700">
+              <caret line="119" column="12" selection-start-line="119" selection-start-column="12" selection-end-line="119" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -111,7 +118,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/ejercicio.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="566">
+            <state relative-caret-position="1836">
               <caret line="108" selection-start-line="80" selection-start-column="3" selection-end-line="108" />
             </state>
           </provider>
@@ -119,20 +126,19 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/fxml/menu.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
+          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="1037">
               <caret line="61" column="33" selection-start-line="59" selection-start-column="13" selection-end-line="61" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fxml/problema.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder" />
+        <entry file="file://$PROJECT_DIR$/src/BD/creacionInsercionCoding.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="79" column="13" lean-forward="true" selection-start-line="79" selection-start-column="13" selection-end-line="79" selection-end-column="13" />
+            <state relative-caret-position="1581">
+              <caret line="93" column="21" selection-start-line="93" selection-start-column="21" selection-end-line="93" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -140,13 +146,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/controllerProblema.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
+            <state relative-caret-position="442">
+              <caret line="40" column="26" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3802#3803#0" expanded="true" />
-                <element signature="e#3869#3870#0" expanded="true" />
-                <element signature="e#3962#3963#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -175,6 +178,9 @@
       <find>anser</find>
       <find>tbl</find>
       <find>setAll</find>
+      <find>button</find>
+      <find>exit</find>
+      <find>tableView</find>
     </findStrings>
   </component>
   <component name="FindManager">
@@ -191,28 +197,28 @@
         <option value="$PROJECT_DIR$/src/sample/sample.fxml" />
         <option value="$PROJECT_DIR$/src/sample/problema.java" />
         <option value="$PROJECT_DIR$/src/BD/MySQL.java" />
-        <option value="$PROJECT_DIR$/src/BD/DAO.java" />
         <option value="$PROJECT_DIR$/src/CSS/style.css" />
-        <option value="$PROJECT_DIR$/src/sample/style.css" />
-        <option value="$PROJECT_DIR$/src/sample/Main.java" />
         <option value="$PROJECT_DIR$/src/sample/resultado.java" />
-        <option value="$PROJECT_DIR$/src/fxml/menu.fxml" />
         <option value="$PROJECT_DIR$/src/sample/ejercicios.java" />
         <option value="$PROJECT_DIR$/src/BD/creacionInsercionCoding.sql" />
         <option value="$PROJECT_DIR$/src/sample/prueba.java" />
         <option value="$PROJECT_DIR$/src/sample/ejercicio.java" />
+        <option value="$PROJECT_DIR$/src/BD/DAO.java" />
         <option value="$PROJECT_DIR$/src/sample/controllerProblema.java" />
         <option value="$PROJECT_DIR$/src/sample/controllerPrincipal.java" />
         <option value="$PROJECT_DIR$/src/fxml/problema.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/Main.java" />
+        <option value="$PROJECT_DIR$/src/fxml/menu.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/style.css" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-88" />
+    <option name="x" value="-90" />
     <option name="y" value="-20" />
-    <option name="width" value="1944" />
-    <option name="height" value="1104" />
+    <option name="width" value="1945" />
+    <option name="height" value="1105" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectReloadState">
@@ -223,6 +229,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -257,8 +265,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -414,6 +420,10 @@
       <workItem from="1569426144428" duration="78000" />
       <workItem from="1569435807167" duration="2793000" />
       <workItem from="1569438715979" duration="4600000" />
+      <workItem from="1569444304929" duration="934000" />
+      <workItem from="1569447605800" duration="1361000" />
+      <workItem from="1569449563245" duration="531000" />
+      <workItem from="1569450230836" duration="245000" />
     </task>
     <task id="LOCAL-00001" summary="Cambio Estilo">
       <created>1569340627981</created>
@@ -429,16 +439,31 @@
       <option name="project" value="LOCAL" />
       <updated>1569366048307</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Agregación de tablas con pruebas">
+      <created>1569444366676</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1569444366676</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Agregación de tablas con pruebas">
+      <created>1569444755481</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1569444755481</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33187000" />
+    <option name="totallyTimeSpent" value="36258000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.25302014" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.26644295" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
@@ -448,18 +473,18 @@
       <window_info id="simpleUML" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.04249292" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.10764872" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Application Servers" order="7" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3286119" />
       <window_info anchor="bottom" id="Problems" order="9" />
       <window_info anchor="bottom" id="Changes" order="10" />
       <window_info anchor="bottom" id="Profiler" order="11" />
       <window_info anchor="bottom" id="Event Log" order="12" weight="0.3286119" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.3286119" />
+      <window_info active="true" anchor="bottom" id="Messages" order="13" visible="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="15" />
       <window_info anchor="bottom" id="Terminal" order="16" weight="0.3286119" />
@@ -522,14 +547,16 @@
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <MESSAGE value="Cambio Estilo" />
     <MESSAGE value="Agregación de script" />
-    <option name="LAST_COMMIT_MESSAGE" value="Agregación de script" />
+    <MESSAGE value="Agregación de tablas con pruebas" />
+    <MESSAGE value="Agregación de tablas con pruebas 2.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="Agregación de tablas con pruebas 2.0" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/BD/DAO.java</url>
-          <line>152</line>
+          <line>103</line>
           <properties class="BD.DAO" method="fetchDificultad">
             <option name="EMULATED" value="true" />
           </properties>
@@ -543,7 +570,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/BD/DAO.java</url>
-          <line>205</line>
+          <line>156</line>
           <properties />
           <option name="timeStamp" value="14" />
         </line-breakpoint>
@@ -677,13 +704,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="76" column="24" selection-start-line="76" selection-start-column="24" selection-end-line="76" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/problema.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-34">
@@ -717,73 +737,77 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/fxml/problema.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="39" column="41" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BD/DAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3128">
+          <caret line="193" selection-start-line="193" selection-end-line="193" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/controllerPrincipal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1700">
+          <caret line="119" column="12" selection-start-line="119" selection-start-column="12" selection-end-line="119" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/ejercicio.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="566">
+        <state relative-caret-position="1836">
           <caret line="108" selection-start-line="80" selection-start-column="3" selection-end-line="108" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BD/creacionInsercionCoding.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-34">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fxml/menu.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="61" column="33" selection-start-line="59" selection-start-column="13" selection-end-line="61" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/controllerPrincipal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="124" column="64" selection-start-line="124" selection-start-column="64" selection-end-line="124" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="1581">
+          <caret line="93" column="21" selection-start-line="93" selection-start-column="21" selection-end-line="93" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/controllerProblema.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3802#3803#0" expanded="true" />
-            <element signature="e#3869#3870#0" expanded="true" />
-            <element signature="e#3962#3963#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fxml/problema.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="79" column="13" lean-forward="true" selection-start-line="79" selection-start-column="13" selection-end-line="79" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="83" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="83" />
+        <state relative-caret-position="442">
+          <caret line="40" column="26" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BD/DAO.java">
+    <entry file="file://$PROJECT_DIR$/src/fxml/menu.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="1037">
+          <caret line="61" column="33" selection-start-line="59" selection-start-column="13" selection-end-line="61" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="73" column="40" lean-forward="true" selection-start-line="73" selection-start-column="40" selection-end-line="73" selection-end-column="40" />
+        <state relative-caret-position="239">
+          <caret line="120" column="27" selection-start-line="120" selection-start-column="27" selection-end-line="120" selection-end-column="27" />
         </state>
       </provider>
     </entry>

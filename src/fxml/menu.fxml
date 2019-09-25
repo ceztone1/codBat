@@ -35,12 +35,12 @@
                         <Insets right="10.0" />
                     </HBox.margin>
                 </Button>
-            <ComboBox fx:id="cbDificultad" prefWidth="100.0" style="-fx-background-color: #3E4D6B;">
+            <ComboBox fx:id="cbDificultad" prefWidth="50.0" style="-fx-background-color: #3E4D6B;">
                <HBox.margin>
                   <Insets right="10.0" />
                </HBox.margin>
             </ComboBox>
-            <ComboBox fx:id="cbSolucion" prefWidth="100.0" style="-fx-background-color: #3E4D6B;">
+            <ComboBox fx:id="cbSolucion" prefWidth="50.0" style="-fx-background-color: #3E4D6B;">
 
             </ComboBox>
             </children>

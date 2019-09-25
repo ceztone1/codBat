@@ -7,9 +7,11 @@ import javafx.collections.ObservableArray;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.control.DateCell;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableView;
+import javafx.stage.Stage;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -21,14 +23,23 @@ public class controllerProblema implements Initializable {
     Label lblCodPropio, lblCodSol;
     @FXML
     TableView<prueba> tblResult = new TableView<>();
+    @FXML
+    Button btnRegresar;
     ObservableList<prueba> obResult;
-    ejercicio ejer = new ejercicio();
+
+    Stage stage;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         tblResult.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);
-
+        actions();
         llenarLabels();
+    }
+
+    void actions(){
+        btnRegresar.setOnAction(x->{
+            stage.close();
+        });
     }
 
     void llenarLabels() {
@@ -88,8 +99,9 @@ public class controllerProblema implements Initializable {
 
     }
 
-    public controllerProblema(int idProblema) {
+    public controllerProblema(int idProblema,Stage s) {
         this.idProblema = idProblema;
+        stage=s;
     }
 
     public int getIdProblema() {
