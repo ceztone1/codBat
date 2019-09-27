@@ -34,7 +34,16 @@ insert into problema
 values (5,"answerCell","LOGIC",1);
 
 insert into problema
-values (6," has271","WARMUP",2);
+values (6,"has271","WARMUP",2);
+
+insert into problema
+values (7,"evenlySpaced","LOGIC",2);
+
+insert into problema
+values (8,"Pairs","MAP",2);
+
+insert into problema
+values (9,"allSwap","MAP",2);
 
 
 
@@ -186,6 +195,84 @@ values (1,5, "public boolean answerCell(boolean isMorning, boolean isMom, boolea
          return ans;  \n
         }");
 
+insert into solucion
+values (1,6, "public boolean has271(int[] nums) {\n
+          int len = nums.length;\n
+          for (int i = 0; i < nums.length - 1; i++) {  \n
+            if (i+2 <= nums.length - 1){\n
+              int j = Math.abs(nums[i] - 1); \n
+              int k = Math.abs(j - nums[i+2]);        \n
+              \n
+            if(nums[i+1] == nums[i]+5 && k <= 2)\n
+                return true;     \n
+            }   \n
+          } return false;\n
+        }");
+
+insert into solucion
+values (2,6, "public boolean has271(int[] nums) {\n
+          // Iterate < length-2, so can use i+1 and i+2 in the loop.\n
+          // Return true immediately when seeing 271.\n
+          for (int i=0; i < (nums.length-2); i++) {\n
+            int val = nums[i];\n
+            if (nums[i+1] == (val+5) &&              // the \"7\" check\n
+              Math.abs(nums[i+2] - (val-1)) <= 2) {  // the \"1\" check\n
+                return true;\n
+            }\n
+          }\n
+          \n
+          // If we get here ... none found.\n
+          return false;\n
+        }");
+
+
+
+insert into solucion
+values (1,7,"public boolean evenlySpaced(int a, int b, int c) {\n
+                    int a1=a;\n
+                    int b1=b;\n
+                    int c1=c;\n
+                    if((c1-b1) == (b1-a1) || (b1-c1)==(c1-a1)||(a1-c1)==(c1-b1)||(b1-a1)==(a1-c1))\n
+                    {\n
+                        return true;\n
+                    }\n
+                    return false;\n
+            \n
+                }");
+
+insert into solucion
+values (1,8, "public Map<String, String> pairs(String[] strings) {\n
+           \n
+          Map<String, String> map = new HashMap<String, String>();\n
+           \n
+          for (int i = 0; i < strings.length; i++) {\n
+            String tmp   = strings[i];\n
+            String first = String.valueOf(tmp.charAt(0));\n
+            String last  = String.valueOf(tmp.charAt(tmp.length() - 1));\n
+            map.put(first, last);\n
+          }\n
+          return map;\n
+        }");
+insert into solucion
+values (1,9, "public String[] allSwap(String[] strings) {\n
+          Map<String, Integer> map = new HashMap<String, Integer>();\n
+          for (int i = 0; i < strings.length; i++) {\n
+            String key = String.valueOf(strings[i].charAt(0));\n
+            if (map.containsKey(key)) {\n
+              // swap\n
+              int    pos   = map.get(key); \n
+              String tmp   = strings[pos];\n
+              strings[pos] = strings[i];\n
+              strings[i]   = tmp ;\n
+              // delete\n
+              map.remove(key);\n
+               \n
+            } else {\n
+              map.put(key, i);\n
+            }\n
+          }\n
+          return strings;\n
+        }");
 
 
 

@@ -94,6 +94,38 @@ public class controllerProblema implements Initializable {
                 tblResult.setItems(obResult);
                 break;
 
+                /*asdadsad*/
+            case 6:
+                obResult = FXCollections.observableArrayList();
+                obResult.add(new prueba( "has271([1, 2, 7, 1]) → true","	true",	"OK"));
+                obResult.add(new prueba(   "has271([1, 2, 8, 1]) → false",	"false",	"OK"));
+                obResult.add(new prueba(  "has271([2, 7, 1]) → true","true",	"OK"));
+                obResult.add(new prueba( "has271([3, 8, 2]) → true","true","OK"));
+                tblResult.setItems(obResult);
+            case 7:
+                obResult = FXCollections.observableArrayList();
+                obResult.add(new prueba( "evenlySpaced(2, 4, 6) → true",	"true",	"OK"));
+                obResult.add(new prueba(   "evenlySpaced(4, 6, 2) → true",	"true",	"OK"));
+                obResult.add(new prueba(  "evenlySpaced(4, 6, 3) → false",	"false",	"OK"));
+                obResult.add(new prueba( "evenlySpaced(6, 2, 4) → true",	"true","OK"));
+                tblResult.setItems(obResult);
+
+                break;
+            case 8:
+                obResult = FXCollections.observableArrayList();
+                obResult.add(new prueba( "pairs([code, bug]) → {b: g, c: e}",	"{b: g, c: e}",	"OK"));
+                obResult.add(new prueba(   "pairs([man, moon, main]) → {m: n}",	"{m:n}"	,"OK"));
+                obResult.add(new prueba(  "pairs([]) → {}"	,"{}"	,"OK"));
+                tblResult.setItems(obResult);
+
+                break;
+            case 9:
+                obResult = FXCollections.observableArrayList();
+                obResult.add(new prueba( "allSwap([ab, ac]) → [ac, ab]"	,"[ac, ab]",	"OK"));
+                obResult.add(new prueba(    "allSwap([ab, ac]) → [ac, ab]",	"[ac, ab]",	"OK"));
+                obResult.add(new prueba( "allSwap([ax, bx, cx, cy, by, ay, aaa, azz]) → [ay, by, cy, cx, bx, ax, azz, aaa]",	"[ay, by, cy, cx, bx, ax, azz, aaa]",	"OK"));
+                tblResult.setItems(obResult);
+                break;
         }
 
 
@@ -111,6 +143,7 @@ public class controllerProblema implements Initializable {
     public void setIdProblema(int idProblema) {
         this.idProblema = idProblema;
     }
+
 
 
 }
