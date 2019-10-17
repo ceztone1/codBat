@@ -26,7 +26,6 @@ public class DAO {
         try {
             System.out.println("entra a consulta");
             String query = "select nombre,idProblema,clasificacion,dificultad from problema";
-
             Statement st = conn.createStatement();
             ResultSet rs = st.executeQuery(query);
             problema p = null;
@@ -189,6 +188,29 @@ public class DAO {
             System.out.println("Error al recuperar información...");
         }
         return transactions;
+
+    }
+
+    public String fetchAllDescripcion(int idProblema) {
+        String codigo="";
+        try {
+            System.out.println("entra a consulta");
+            String query = "SELECT descripcion FROM problema WHERE idProblema= "+ idProblema;
+
+            Statement st = conn.createStatement();
+            ResultSet rs = st.executeQuery(query);
+            problema p = null;
+            while (rs.next()) {
+                codigo=rs.getString("descripcion");
+            }
+            rs.close();
+            st.close();
+
+        } catch (SQLException ex) {
+            ex.printStackTrace();
+            System.out.println("Error al recuperar información...");
+        }
+        return codigo;
 
     }
 

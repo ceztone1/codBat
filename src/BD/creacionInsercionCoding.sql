@@ -274,6 +274,45 @@ values (1,9, "public String[] allSwap(String[] strings) {\n
           return strings;\n
         }");
 
+UPDATE problema
+SET descripcion="Given an array of ints, return the number of 9\'s in the array"
+WHERE idProblema=1;
+
+UPDATE problema
+SET descripcion="For this problem, we\'\'ll round an int value up to the next multiple of 10 if its rightmost digit is 5 or more, so 15 rounds up to 20. Alternately, round down to the previous multiple of 10 if its rightmost digit is less than 5, so 12 rounds down to 10. Given 3 ints, a b c, return the sum of their rounded values. To avoid code repetition, write a separate helper \"public int round10(int num) {\" and call it 3 times. Write the helper entirely below and at the same indent level as roundSum()."
+WHERE idProblema=2;
+
+UPDATE problema
+SET descripcion="Given a day of the week encoded as 0=Sun, 1=Mon, 2=Tue, ...6=Sat, and a boolean indicating if we are on vacation, return a string of the form \"7:00\" indicating when the alarm clock should ring. Weekdays, the alarm should be \"7:00\" and on the weekend it should be \"10:00\". Unless we are on vacation -- then on weekdays it should be \"10:00\" and weekends it should be \"off\"."
+WHERE idProblema=3;
+
+UPDATE problema
+SET descripcion="Given two ints, each in the range 10..99, return true if there is a digit that appears in both numbers, such as the 2 in 12 and 23. Note: division, e.g. n/10, gives the left digit while the % \"mod\" n%10 gives the right digit.)"
+WHERE idProblema=4;
+
+UPDATE problema
+SET descripcion="Your cell phone rings. Return true if you should answer it. Normally you answer, except in the morning you only answer if it is your mom calling. In all cases, if you are asleep, you do not answer."
+WHERE idProblema=5;
+
+UPDATE problema
+SET descripcion="Given an array of ints, return true if it contains a 2, 7, 1 pattern: a value, followed by the value plus 5, followed by the value minus 1. Additionally the 271 counts even if the \"1\" differs by 2 or less from the correct value."
+WHERE idProblema=6;
+
+UPDATE problema
+SET descripcion="
+Given three ints, a b c, one of them is small, one is medium and one is large. Return true if the three values are evenly spaced, so the difference between small and medium is the same as the difference between medium and large."
+WHERE idProblema=7;
+
+UPDATE problema
+SET descripcion="
+Given an array of non-empty strings, create and return a Map<String, String> as follows: for each string add its first character as a key with its last character as the value."
+WHERE idProblema=8;
+
+UPDATE problema
+SET descripcion="
+We''ll say that 2 strings \"match\" if they are non-empty and their first chars are the same. Loop over and then return the given array of non-empty strings as follows: if a string matches an earlier string in the array, swap the 2 strings in the array. When a position in the array has been swapped, it no longer matches anything. Using a map, this can be solved making just one pass over the array. More difficult than it looks."
+WHERE idProblema=9;
+
 
 
 

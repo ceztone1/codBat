@@ -25,6 +25,8 @@ public class controllerProblema implements Initializable {
     TableView<prueba> tblResult = new TableView<>();
     @FXML
     Button btnRegresar;
+    @FXML
+    Label lblDesc;
     ObservableList<prueba> obResult;
 
     Stage stage;
@@ -34,6 +36,7 @@ public class controllerProblema implements Initializable {
         tblResult.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);
         actions();
         llenarLabels();
+
     }
 
     void actions(){
@@ -43,6 +46,8 @@ public class controllerProblema implements Initializable {
     }
 
     void llenarLabels() {
+        lblDesc.setWrapText(true);
+        lblDesc.setText(dao.fetchAllDescripcion(idProblema));
         lblCodPropio.setText(dao.fetchAllCodigo(idProblema, 1));
         lblCodSol.setText(dao.fetchAllCodigo(idProblema, 2));
         llenarTablaArrayCount(idProblema);

@@ -3,36 +3,62 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.cell.PropertyValueFactory?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1800.0" style="-fx-background-color: #8C99AE;" xmlns="http://javafx.com/javafx/8.0.999-ea" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1800.0" style="-fx-background-color: #8C99AE;" xmlns="http://javafx.com/javafx/8.0.999-ea" xmlns:fx="http://javafx.com/fxml/1">
     <children>
-        <VBox layoutX="14.0" layoutY="25.0" prefHeight="750.0" prefWidth="427.0" style="-fx-border-color: #3E4D6B; -fx-border-width: 2;">
+        <VBox layoutX="48.0" layoutY="186.0" prefHeight="800.0" prefWidth="500.0" style="-fx-border-color: #3E4D6B; -fx-border-width: 2;">
             <children>
-                <Label alignment="CENTER" prefHeight="50.0" prefWidth="428.0" style="-fx-background-color: #3BB9C2; -fx-font: 16px Abadi;" text="Predeterminated Solution" />
-                <Label fx:id="lblCodSol" alignment="CENTER" contentDisplay="CENTER" prefHeight="720.0" prefWidth="423.0" text="Codigo"/>
+                <Label alignment="CENTER" prefHeight="49.0" prefWidth="502.0" style="-fx-background-color: #3BB9C2; -fx-font: 16px Abadi;" text="Predeterminated Solution" />
+            <ScrollPane prefHeight="747.0" prefWidth="496.0">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="896.0" prefWidth="477.0" style="-fx-background-color: #8C99AE;">
+                     <children>
+                            <Label fx:id="lblCodSol" alignment="CENTER" contentDisplay="CENTER" prefHeight="950.0" prefWidth="423.0" text="Codigo">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
 
             </children>
         </VBox>
-        <VBox layoutX="448.0" layoutY="25.0" prefHeight="750.0" prefWidth="427.0" style="-fx-border-color: #3E4D6B; -fx-border-width: 2;">
+        <VBox layoutX="582.0" layoutY="186.0" prefHeight="800.0" prefWidth="500.0" style="-fx-border-color: #3E4D6B; -fx-border-width: 2;">
             <children>
-                <Label alignment="CENTER" prefHeight="50.0" prefWidth="433.0" style="-fx-background-color: #3BB9C2; -fx-font: 16px Abadi;" text="Own Solution" />
-                <Label fx:id="lblCodPropio" alignment="CENTER" prefHeight="720.0" prefWidth="423.0" text="Codigo"/>
+                <Label alignment="CENTER" prefHeight="50.0" prefWidth="506.0" style="-fx-background-color: #3BB9C2; -fx-font: 16px Abadi;" text="Own Solution" />
+            <ScrollPane prefHeight="897.0" prefWidth="496.0">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="896.0" prefWidth="423.0">
+                     <children>
+                            <Label fx:id="lblCodPropio" alignment="CENTER" prefHeight="898.0" prefWidth="480.0" style="-fx-background-color: #8C99AE;" text="Codigo">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
             </children>
             <opaqueInsets>
                 <Insets />
             </opaqueInsets>
         </VBox>
-        <VBox layoutX="885.0" layoutY="25.0" prefHeight="750.0" prefWidth="453.0" style="-fx-border-color: #3E4D6B; -fx-border-width: 2;">
+        <VBox layoutX="1117.0" layoutY="186.0" prefHeight="435.0" prefWidth="519.0" style="-fx-border-color: #3E4D6B; -fx-border-width: 2;">
             <children>
-                <Label alignment="CENTER" prefHeight="50.0" prefWidth="451.0" style="-fx-background-color: #3BB9C2; -fx-font: 16px Abadi;" text="Output" />
-            <TableView fx:id="tblResult" prefHeight="200.0" prefWidth="180.0">
+                <Label alignment="CENTER" prefHeight="50.0" prefWidth="522.0" style="-fx-background-color: #3BB9C2; -fx-font: 16px Abadi;" text="Output" />
+            <TableView fx:id="tblResult" prefWidth="515.0">
               <columns>
-                <TableColumn prefWidth="500.0" text="Expected">
+                <TableColumn minWidth="300.0" prefWidth="400.0" text="Expected">
                     <cellValueFactory>
                         <PropertyValueFactory property="expected" />
                     </cellValueFactory>
@@ -48,16 +74,14 @@
                       </cellValueFactory>
                   </TableColumn>
               </columns>
-               <VBox.margin>
-                  <Insets top="80.0" />
-               </VBox.margin>
+            
             </TableView>
             </children>
             <opaqueInsets>
                 <Insets />
             </opaqueInsets>
         </VBox>
-        <VBox alignment="CENTER" layoutX="1371.0" layoutY="158.0" prefHeight="750.0" prefWidth="100.0">
+        <VBox alignment="CENTER" layoutX="1639.0" layoutY="161.0" prefHeight="750.0" prefWidth="161.0">
             <children>
                 <Button mnemonicParsing="false" prefHeight="20.0" prefWidth="100.0" style="-fx-background-color: #3E4D6B; -fx-border-radius: 30; -fx-text-fill: white;" text="Tests" visible="false">
                     <VBox.margin>
@@ -71,5 +95,10 @@
                 </Button>
             </children>
         </VBox>
+      <Label fx:id="lblDesc" layoutX="48.0" layoutY="14.0" prefHeight="157.0" prefWidth="1740.0" text="Label">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
     </children>
 </AnchorPane>

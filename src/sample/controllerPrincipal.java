@@ -25,7 +25,7 @@ public class controllerPrincipal implements Initializable {
     @FXML
     TableView<problema> tblProblema = new TableView<>();
     @FXML
-    Button btnLog1,btnLog2,btnMap,btnWar,btnShow;
+    Button btnLog1,btnLog2,btnMap,btnWar,btnShow,btnAll;
     @FXML
     ComboBox cbSolucion, cbDificultad;
     int id;
@@ -47,6 +47,11 @@ public class controllerPrincipal implements Initializable {
         btnLog1.setOnAction(x->{
             tblProblema.setItems(dao.fetchAllProblemas("LOGIC",1));
             System.out.println("siiiiiiii");
+
+        });
+        btnAll.setOnAction(x->{
+            tblProblema.setItems(dao.fetchAllProblemas());
+
 
         });
         btnLog2.setOnAction(x->{

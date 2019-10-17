@@ -11,16 +11,16 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="680.0" style="-fx-background-color: #8C99AE;" xmlns="http://javafx.com/javafx/8.0.999-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllerPrincipal">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: #8C99AE;" xmlns="http://javafx.com/javafx/8.0.999-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllerPrincipal">
     <children>
-        <HBox prefHeight="51.0" prefWidth="679.0" style="-fx-background-color: #3BB9C2;">
+        <HBox prefHeight="51.0" prefWidth="1017.0" style="-fx-background-color: #3BB9C2;">
             <children>
                 <Button fx:id="btnLog1" minWidth="100.0" mnemonicParsing="false" style="-fx-background-color: #3E4D6B; -fx-text-fill: white;" text="LOGIC 1">
                     <HBox.margin>
                         <Insets right="10.0" />
                     </HBox.margin>
                 </Button>
-                <Button fx:id="btnLog2" minWidth="100.0" mnemonicParsing="false" style="-fx-background-color: #3E4D6B; -fx-text-fill: white;" text="LOGIC 2">
+                <Button fx:id="btnLog2" minWidth="100.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="137.0" style="-fx-background-color: #3E4D6B; -fx-text-fill: white;" text="LOGIC 2">
                     <HBox.margin>
                         <Insets right="10.0" />
                     </HBox.margin>
@@ -30,17 +30,22 @@
                         <Insets right="10.0" />
                     </HBox.margin>
                 </Button>
-                <Button fx:id="btnWar" minWidth="100.0" mnemonicParsing="false" style="-fx-background-color: #3E4D6B; -fx-text-fill: white;" text="WARMUP 2">
+            <Button fx:id="btnWar" minWidth="100.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="150.0" style="-fx-background-color: #3E4D6B; -fx-text-fill: white;" text="WARMUP 2">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Button>
+                <Button fx:id="btnAll" minWidth="100.0" mnemonicParsing="false" style="-fx-background-color: #3E4D6B; -fx-text-fill: white;" text="ALL">
                     <HBox.margin>
                         <Insets right="10.0" />
                     </HBox.margin>
                 </Button>
-            <ComboBox fx:id="cbDificultad" prefWidth="50.0" style="-fx-background-color: #3E4D6B;">
+            <ComboBox fx:id="cbDificultad" prefHeight="31.0" prefWidth="150.0" style="-fx-background-color: #3E4D6B;">
                <HBox.margin>
                   <Insets right="10.0" />
                </HBox.margin>
             </ComboBox>
-            <ComboBox fx:id="cbSolucion" prefWidth="50.0" style="-fx-background-color: #3E4D6B;">
+            <ComboBox fx:id="cbSolucion" prefHeight="31.0" prefWidth="150.0" style="-fx-background-color: #3E4D6B;">
 
             </ComboBox>
             </children>
@@ -48,13 +53,13 @@
                 <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
             </padding>
         </HBox>
-        <Label layoutX="207.0" layoutY="96.0" text="Exercises">
+        <Label layoutX="316.0" layoutY="92.0" style="-fx-text-fill: #000000;" text="Exercises">
             <font>
                 <Font name="Candara Light" size="26.0" />
             </font>
         </Label>
-        <Button fx:id="btnShow" layoutX="564.0" layoutY="224.0" mnemonicParsing="false" style="-fx-background-color: #3E4D6B; -fx-text-fill: white;" text="Show" />
-      <TableView fx:id="tblProblema" layoutX="41.0" layoutY="139.0" prefHeight="200.0" prefWidth="459.0" style="-fx-background-color: rgba(63, 191, 191, 0.7); -fx-border-color: blue;">
+        <Button fx:id="btnShow" layoutX="781.0" layoutY="405.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="92.0" style="-fx-background-color: #3E4D6B; -fx-text-fill: white;" text="Show" />
+      <TableView fx:id="tblProblema" layoutX="41.0" layoutY="139.0" prefHeight="583.0" prefWidth="707.0" style="-fx-background-color: rgba(63, 191, 191, 0.7); -fx-border-color: blue;">
         <columns>
           <TableColumn fx:id="tblColNombre" minWidth="0.0" prefWidth="435.0" text="Name">
               <cellValueFactory>
